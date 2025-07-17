@@ -1,3 +1,17 @@
+bin
+obj
+packages
+Framework64
+microsoft.testplatform*
+*.bat
+Connext/ConnextAutomation/.vs/
+Connext/ConnextAutomation/BuildTools/
+Connext/ConnextAutomation/TestResults/
+Connext/ConnextAutomation/.vs/ConnextAutomation/FileContentIndex/3a29486b-ccaa-419f-957b-9553d6af67c1.vsidx
+Connext/ConnextAutomation/.vs/ConnextAutomation/v17/.suo
+Connext/ConnextAutomation/.vs/ConnextAutomation/v17/DocumentLayout.json
+Connext/ConnextAutomation/.vs/ConnextAutomation/v17/TestStore/0/000.testlog
+
 # Prerequisites
 *.d
 

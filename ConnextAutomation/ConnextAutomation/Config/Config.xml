@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<config>
+	<!-- Setup environment for running test-->
+	<browser>chrome</browser>
+	<!--projects: DKHN; BVTN; Horus-->
+	<project_name>dkhn</project_name>
+	<site_name>qa</site_name>
+
+	<!-- BVDKHN -->
+	<dkhn>
+		<!--DEV DKHN-->
+		<dev
+			url="">
+			<instanceName></instanceName>
+			<tokens bearerToken=""/>
+			<webApis Api=""/>
+		</dev>
+
+		<!--QA DKHN-->
+		<qa
+			url="">
+			<instanceName></instanceName>
+			<tokens bearerToken=""/>
+			<webApis Api=""/>
+		</qa>
+		<!--<qa
+			url="">
+			<instanceName></instanceName>
+			<tokens bearerToken=""/>
+			<webApis Api=""/>
+		</qa>-->
+
+		<!--Staging DKHN-->
+		<staging
+			url="">
+			<instanceName></instanceName>
+			<tokens bearerToken=""/>
+			<webApis Api=""/>
+		</staging>
+	</dkhn>
+
+	<!--BV Thien Nhan-->
+	<bvtn>
+		<qa
+			url="">
+			<instanceName></instanceName>
+			<tokens bearerToken=""/>
+			<webApis Api=""/>
+		</qa>
+		<!--<qa
+			url="">
+			<instanceName></instanceName>
+			<tokens bearerToken=""/>
+			<webApis Api=""/>
+		</qa>-->
+		<staging
+			url="">
+			<instanceName></instanceName>
+			<tokens bearerToken=""/>
+			<webApis Api=""/>
+		</staging>
+	</bvtn>
+
+	<!--Horus-->
+	<horus>
+		<qa
+			url="">
+			<instanceName></instanceName>
+			<tokens bearerToken=""/>
+			<webApis Api=""/>
+		</qa>
+		<!--<qa
+			url="">
+			<instanceName></instanceName>
+			<tokens bearerToken=""/>
+			<webApis Api=""/>
+		</qa>-->
+	</horus>
+
+	<account>
+		<valid username="" password="" fullname=""/>
+		<bvtn_valid username="" password="" fullname=""/>
+		<invalid username="abc@123.456" password="abc"/>
+		<email mail="" password="" recoveryemailaddr="" phone="" mailuserrole="" passuserrole="" />
+		<facebook site="https://www.facebook.com" emailorphone="" password="" username="" />
+		<zalo site="" username="" />
+		<!--(DKHN)-->
+		<ivf>
+			<admin username="" password="" fullname=""/>
+			<trucchat usernamelead="" emaillead="" passwordlead="" team=""
+					  username="" email="" password=""/>
+			<telesale usernamelead="" emaillead="" passwordlead="" team=""
+					  username="" email="" password=""
+					  nv1="" nv2="" nv3="" nv4="" nv5="" 
+					  nv6="" nv7="" nv8="" nv9="" nv10="" nv11=""/>
+			<tuvan usernamelead=" emaillead="" passwordlead="" team=""
+				   username="" email="" password=""/>
+			<cskh usernamelead="" emaillead="" passwordlead="" team=""
+				  username="" email="" password=""/>
+		</ivf>
+		<dakhoa>
+			<admin username="" password="" fullname=""/>
+			<trucchat username="" password=""/>
+			<telesale username="" password=""/>
+			<tuvan username="" password=""/>
+			<cskh username="" password=""/>
+		</dakhoa>
+		<yhtt username="" password=""/>
+		<doitac username="" password=""/>
+		<khachdoan usernamelead="" emaillead ="" passwordlead=""
+				   username="" email="" password=""/>
+	</account>
+
+	<!--Firefox directory for 32 bit or 64 bit. (Currently, Using gecko 64 bit)-->
+	<gecko path="Core\WebDrivers" />
+
+	<!-- Database information for test report-->
+	<!--<database>
+		<connection>Server=.;Initial Catalog=...;Integrated Security=true;Trusted_Connection=Yes;</connection>
+		<functionality>SELECT * FROM ...</functionality>
+		<performance>SELECT * FROM ...</performance>
+	</database>-->
+
+	<!-- Screenshot directory and format setting -->
+	<screenshot>
+		<!--<screenshotPath>D://.../.../.../</screenshotPath>-->
+		<screenshotPath>TestResults</screenshotPath>
+		<screenshotFormat>.jpeg</screenshotFormat>
+	</screenshot>
+
+</config>
